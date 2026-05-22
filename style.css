@@ -1,0 +1,51 @@
+/* === Reset & Base === */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1a1a2e;
+  color: #e0e0e0;
+  font-family: monospace;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Game Container === */
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* === Score Display === */
+#scoreDisplay {
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  color: #00ff88;
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+  user-select: none;
+}
+
+/* === Canvas === */
+#gameCanvas {
+  max-width: 100vw;
+  max-height: calc(100vh - 80px);
+  border: 2px solid #16213e;
+  border-radius: 4px;
+  image-rendering: pixelated;
+  display: block;
+}
+
+/* === Canvas Unsupported Fallback === */
+noscript p {
+  text-align: center;
+  padding: 2rem;
+  color: #ff4757;
+}
