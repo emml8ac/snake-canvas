@@ -447,9 +447,6 @@ function pauseGame () {
     render(ctx, state);
   }
 }
-    render(ctx, state);
-  }
-}
 
 function resumeGame () {
   if (loopPaused && state.state === 'playing') {
